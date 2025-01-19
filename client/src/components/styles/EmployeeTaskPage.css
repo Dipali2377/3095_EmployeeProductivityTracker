@@ -1,0 +1,117 @@
+/* Container for the form */
+.task-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Reduced gap for better alignment */
+  justify-content: space-between; /* Distribute elements evenly */
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+Task description
+
+/* Style for each input, textarea, and select */
+.task-input,
+.task-textarea,
+.task-select {
+  padding: 8px;
+  margin: 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 220px; /* Slightly smaller width */
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Make the textarea more user-friendly */
+.task-textarea {
+  resize: none; /* Prevent vertical resizing */
+  min-height: 80px; /* Set a smaller height for the textarea */
+}
+.task-textarea ::placeholder {
+  align-items: center;
+  padding-top: 40px;
+}
+/* Style for the select elements to make them consistent */
+.task-select {
+  padding: 8px;
+  margin: 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 220px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Button styling */
+.task-btn {
+  padding: 8px 16px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 180px; /* Adjust the width of the button */
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+/* Button hover effect */
+.task-btn:hover {
+  background-color: #4cae4c;
+}
+
+/* Container for task list */
+.employee-task-container {
+  padding: 15px;
+}
+
+/* Task list styling */
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-item {
+  padding: 10px;
+  margin-bottom: 12px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+/* Styling for status colors */
+.status {
+  font-weight: bold;
+}
+
+.status.green {
+  color: green;
+}
+
+.status.yellow {
+  color: goldenrod;
+}
+
+.status.blue {
+  color: dodgerblue;
+}
+
+.status.gray {
+  color: gray;
+}
+
+/* Optional: Make sure the form looks good on mobile */
+@media (max-width: 768px) {
+  .task-form {
+    flex-direction: column; /* Stack form elements vertically on smaller screens */
+    gap: 10px;
+  }
+
+  .task-input,
+  .task-textarea,
+  .task-select,
+  .task-btn {
+    width: 100%; /* Make inputs and selects take full width on small screens */
+  }
+}

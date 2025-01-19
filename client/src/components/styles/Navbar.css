@@ -1,0 +1,62 @@
+/* Base styles for the Navbar */
+.navbar {
+  background-color: white;
+  padding: 15px 30px; /* Spacing around the navbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin: 0 20px; /* Space between list items */
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500; /* Slightly bold font */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.navbar a:hover {
+  color: #f5a623; /* Color change on hover */
+  transform: scale(1.1); /* Slight scale effect on hover */
+}
+
+/* Specific colors for Login and Signup */
+.navbar a.login {
+  color: #007bff; /* Blue color for Login */
+}
+
+.navbar a.signup {
+  color: #28a745; /* Green color for Signup */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items on smaller screens */
+    align-items: center;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .navbar li {
+    margin: 10px 0;
+  }
+
+  .navbar a {
+    font-size: 1.5rem; /* Slightly larger font size on mobile */
+  }
+}

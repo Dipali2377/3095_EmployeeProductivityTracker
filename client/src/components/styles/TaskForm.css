@@ -1,0 +1,122 @@
+/* Global form container */
+form {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  max-width: 2000px; /* Increased width */
+  width: 100%;
+  height: 500px; /* Fixed height */
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Arial", sans-serif;
+  overflow-y: auto; /* Ensures scroll if content overflows */
+}
+
+/* Form title */
+form h3 {
+  color: #2c3e50;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  border-bottom: 2px solid #4caf50;
+  padding-bottom: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.4;
+}
+
+/* Input fields */
+input,
+textarea,
+select {
+  padding: 15px;
+  font-size: 1.1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+/* Focus effect */
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.2);
+  outline: none;
+}
+
+/* Textarea specific styles */
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Select dropdown */
+select {
+  cursor: pointer;
+}
+
+/* Input and textarea placeholder */
+input::placeholder,
+textarea::placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+/* Button styling */
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(1.02);
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Button disabled state */
+button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+/* Spacing adjustments for smaller screens */
+@media (max-width: 768px) {
+  form {
+    padding: 30px 20px;
+  }
+
+  form h3 {
+    font-size: 1.8rem;
+  }
+
+  input,
+  textarea,
+  select,
+  button {
+    font-size: 1rem;
+  }
+}

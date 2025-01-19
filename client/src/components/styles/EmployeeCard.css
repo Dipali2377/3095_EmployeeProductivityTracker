@@ -1,0 +1,20 @@
+/* EmployeeCard.css */
+.status {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pending {
+  background-color: yellow;
+}
+
+.completed {
+  background-color: green;
+}
+
+.inprogress {
+  background-color: blue;
+}
